@@ -40,3 +40,32 @@ Migrating to CreateMessages (20221207083259)
   [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "Good evening"], ["created_at", "2022-12-07 08:35:25.720828"], ["updated_at", "2022-12-07 08:35:25.720828"]]
   [1m[36mTRANSACTION (206.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mMessage Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "messages"[0m
+Started GET "/api/v1/messages" for ::1 at 2022-12-07 10:37:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/messages_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 7091)
+
+
+Started GET "/api/v1/messages" for ::1 at 2022-12-07 10:38:00 +0200
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/messages_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 966)
+
+
+Started GET "/api/v1/messages" for ::1 at 2022-12-07 10:38:01 +0200
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/messages_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 778)
+
+
+Started GET "/api/v1/messages" for ::1 at 2022-12-07 10:38:01 +0200
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/messages_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 778)
+
+
