@@ -18,8 +18,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -36,7 +34,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[User Register and Log In]**
+- **[API endpoint that return a random greeting]**
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
