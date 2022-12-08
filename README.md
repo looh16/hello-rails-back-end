@@ -60,6 +60,10 @@ git clone https://github.com/looh16/hello-rails-back-end
 - run rails server
 - Visit [localhost:3000](http://localhost:3000) in your browser!
 
+
+## 🛠 Link to Front-end <a name="built-with"></a>
+[Front-end](https://github.com/looh16/hello-react-front-end)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
